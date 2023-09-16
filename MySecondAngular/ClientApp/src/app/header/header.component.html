@@ -1,0 +1,10 @@
+<nav class="n-navbar back-gray height-50px flex-row spacebetween">
+    <img src="assets/Images/logo.png" alt="">
+    <span class="Show"></span>
+    <ul>
+        <li><button class="btn" routerLink="/">Main Page</button></li>
+        <li><button class="btn" *ngIf="$any(username).length == 0" routerLink="/signup">Sign Up</button></li>
+        <li><button class="btn" *ngIf="$any(username).length == 0" routerLink="/signin">Sign In</button></li>
+        <li><button class="btn" *ngIf="$any(username).length != 0" routerLink="/signout">Sign Out</button></li>
+    </ul>
+</nav>

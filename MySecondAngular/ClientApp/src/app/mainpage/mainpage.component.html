@@ -1,0 +1,7 @@
+<p *ngIf="CurrentUser != ''">Welcome {{CurrentUser}}</p>
+<div class="flex-row-wrap m-15 gap-20">
+    <div class="lineandshine widthfc t-center" *ngFor="let Account of Accounts">
+        <p>{{Account.username}}</p>
+        <button (click)="GotoChat(Account.username)" class="btn">Start Chat</button>
+    </div>
+</div>

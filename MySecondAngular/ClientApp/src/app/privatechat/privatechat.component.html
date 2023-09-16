@@ -1,0 +1,10 @@
+<div>
+    <div class="t-center">
+        <textarea #message placeholder="Write your Message" class="width-300px"></textarea>
+        <br/>
+        <button (click)="SendPrivateMessage(message.value)" class="btn">Send</button>
+    </div>
+    <div class="lineandshine" *ngFor="let message of msg">
+         <p>{{message.sender}}: {{message.message}}</p>
+    </div>
+</div>
